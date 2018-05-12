@@ -9,21 +9,29 @@ import localePTBR from '@angular/common/locales/pt';
 registerLocaleData(localePTBR);
 
 
-//import { ROUTES } from './app.routes'
+import { ROUTES } from './app.routes'
 
 
 
 import { AppComponent } from './app.component';
+import { HomeComponent } from './component/home/home.component';
+import { HeaderComponent } from './component/header/header.component';
+import { FooterComponent } from './component/footer/footer.component';
+import { MenuComponent } from './component/menu/menu.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    HeaderComponent,
+    FooterComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
-    //RouterModule.forRoot(ROUTES),
+    RouterModule.forRoot(ROUTES),
     ReactiveFormsModule,
     FormsModule,
   ],
